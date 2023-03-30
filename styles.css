@@ -14,9 +14,9 @@
 
 :root {
     --input-border-color: #E5E7EB;
-    --secondary-color: hsl(25, 68%, 46%);
-    --secondary-color-hover: hsl(29, 68%, 56%);
-    --secondary-color-active: hsl(29, 68%, 36%);
+    --secondary-color: hsl(30, 70%, 45%);
+    --secondary-color-hover: hsl(30, 70%, 50%);
+    --secondary-color-active: hsl(30, 70%, 40%);
     --error-color: #d12f2f;
 }
 
