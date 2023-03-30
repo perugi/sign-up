@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("fonts/norse-bold/norse-bold-webfont.woff")format("woff"),
+        url("fonts/norse-bold/norse-bold-webfont.woff2")format("woff2")
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/roboto-regular/roboto-regular-webfont.woff")format("woff"),
+        url("fonts/roboto-regular/roboto-regular-webfont.woff2")format("woff2")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    border: 1px solid black;
+}
+
+body {
+    font-family: 'Roboto';
+    height: 100vh;
+    display: flex;
+}
+
+.img-container {
+    background-image: url("img/anton-poznyak-in3-CLQb48A-unsplash.jpg");
+    background-size: cover;
+    background-position-x: center;
+    /* bg-color defined as fallback to the background image. */
+    background-color: black;
+    flex: 2;
+    max-width: 700px;
+    position: relative;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    flex: 3;
+}
+
+img#img-bg {
+    height: 100%;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: max(15%, 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#img-logo {
+    height: 90%
+}
+
+.odin-text {
+    font-family: "Norse-Bold";
+    color: white;
+    font-size: max(13vh, 90px);
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+}
+
+.photo-credit>a {
+    color: inherit;
+}
+
+.photo-credit>a:visited {
+    color: inherit;
+}
