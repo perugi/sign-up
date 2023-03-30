@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 @font-face {
     font-family: "Norse-Bold";
     src: url("fonts/norse-bold/norse-bold-webfont.woff")format("woff"),
         url("fonts/norse-bold/norse-bold-webfont.woff2")format("woff2")
 }
 
-@font-face {
+/* @font-face {
     font-family: "Roboto";
     src: url("fonts/roboto-regular/roboto-regular-webfont.woff")format("woff"),
         url("fonts/roboto-regular/roboto-regular-webfont.woff2")format("woff2")
+} */
+
+:root {
+    --input-border-color: #E5E7EB;
 }
 
 * {
@@ -17,11 +23,11 @@
 }
 
 body * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', monospace;
     height: 100vh;
     display: flex;
 }
@@ -75,6 +81,8 @@ img#img-logo {
 }
 
 .photo-credit {
+    font-family: monospace;
+    font-size: 0.8rem;
     position: absolute;
     bottom: 5px;
     color: white;
@@ -86,4 +94,126 @@ img#img-logo {
 
 .photo-credit>a:visited {
     color: inherit;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.content-container>* {
+    padding-left: 50px;
+}
+
+.description-container,
+.form-container>p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.description-container {
+    width: min(90%, 750px);
+}
+
+.description-container>p:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.description-container>p:last-child {
+    margin-bottom: 3rem;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+form>div {
+    margin-top: 1rem;
+    display: flex;
+}
+
+form>div:last-child {
+    margin-top: 0;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #353535;
+    display: block;
+    text-transform: uppercase;
+}
+
+input {
+    width: min(20vw, 250px);
+    font-size: 1em;
+    height: 2em;
+    padding: 0 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+}
+
+input:active {
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+input:invalid {
+    border-color: red;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+input:placeholder-shown {
+    /* do not show the required inputs as invalid when empty */
+    border-color: var(--input-border-color);
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+form>div>div:last-child {
+    margin-left: min(5vw, 70px);
+}
+
+.password-validation {
+    height: 1rem;
+    color: red;
+    font-size: 0.8rem;
+}
+
+button {
+    margin: 2.5rem 0;
+    border: none;
+    color: white;
+    background-color: #353535;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #464646;
+}
+
+button:active {
+    background-color: #000000;
+}
+
+.content-container>p {
+    font-size: 1.2rem;
+}
+
+.content-container>p>a {
+    color: #000000
+}
+
+.content-container>p>a:visited {
+    color: #000000
 }
