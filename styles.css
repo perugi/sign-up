@@ -43,6 +43,7 @@ body {
     /* bg-color defined as fallback to the background image. */
     background-color: black;
     flex: 2;
+    min-width: 450px;
     max-width: 700px;
     position: relative;
     height: inherit;
