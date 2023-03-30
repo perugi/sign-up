@@ -26,10 +26,6 @@
     box-sizing: border-box;
 }
 
-body * {
-    /* border: 1px solid black; */
-}
-
 body {
     font-family: 'Roboto', monospace;
     height: 100vh;
