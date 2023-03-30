@@ -202,6 +202,7 @@ button {
 
 button:hover {
     background-color: var(--secondary-color-hover);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -215,6 +216,10 @@ button:active {
 
 .content-container>p>a {
     color: var(--secondary-color);
+}
+
+.content-container>p>a:hover {
+    color: var(--secondary-color-hover);
 }
 
 .content-container>p>a:visited {
